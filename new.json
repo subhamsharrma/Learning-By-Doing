@@ -1,0 +1,73 @@
+
+
+{
+   "news": [
+        {
+        "id": 1,
+        "title": "Global Economy Shows Signs of Recovery",
+        "description": "Stock markets are seeing a steady rise as economic indicators improve.",
+        "date": "2025-09-23"
+        },
+        {
+        "id": 2,
+        "title": "New Tech Innovation Unveiled",
+        "description": "A breakthrough in AI technology promises faster data processing.",
+        "date": "2025-09-22"
+        },
+        {
+        "id": 3,
+        "title": "Sports Championship Results",
+        "description": "The finals ended with a nail-biting finish, celebrating the champions.",
+        "date": "2025-09-21"
+        },
+        {
+        "id": 4,
+        "title": "Climate Summit 2025",
+        "description": "World leaders gather to discuss global climate change initiatives.",
+        "date": "2025-09-20"
+        },
+        {
+        "id": 5,
+        "title": "New Movie Release Breaks Records",
+        "description": "The latest blockbuster has broken all box office records in the first week.",
+        "date": "2025-09-19"
+        },
+        {
+        "id": 6,
+        "title": "Space Exploration Milestone",
+        "description": "A new space probe successfully lands on a distant asteroid.",
+        "date": "2025-09-18"
+        },
+        {
+        "id": 7,
+        "title": "Health Advisory Issued",
+        "description": "Authorities issue new health guidelines for seasonal flu.",
+        "date": "2025-09-17"
+        },
+        {
+        "id": 8,
+        "title": "Education Reform Announced",
+        "description": "Government introduces new policies to improve education standards.",
+        "date": "2025-09-16"
+        },
+        {
+        "id": 9,
+        "title": "Tech Conference Highlights",
+        "description": "The annual tech conference showcased the latest gadgets and innovations.",
+        "date": "2025-09-15"
+        },
+        {
+        "id": 10,
+        "title": "Art Exhibition Opens",
+        "description": "A new art exhibition featuring contemporary artists opens downtown.",
+        "date": "2025-09-14"
+        },
+        {
+        "id": 11,
+        "title": "Local Festival Celebration",
+        "description": "The city celebrates its annual cultural festival with grand events.",
+        "date": "2025-09-13"
+        }
+  ]
+}
+  
