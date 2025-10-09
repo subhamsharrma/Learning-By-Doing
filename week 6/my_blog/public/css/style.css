@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+ul {
+  list-style-type: none; /* removes bullet points */
+  padding: 0; /* rem  oves default left padding */
+  margin: 0; /* optional, to align neatly */
+}
+
+h1 {
+  color: royalblue;
+  border: 2px solid rgb(55, 37, 127);
+  border-radius: 12px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+small {
+  color: grey;
+  font-size: 10px;
+  font-style: italic;
+  display: flex;
+  justify-content: right;
+  margin-top: 40px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+p {
+  text-align: justify;
+  margin: 20px;
+  margin-top: 70px;
+  border: 2px solid rgb(55, 37, 127);
+  border-radius: 12px;
+  padding: 10px;
+  margin-left: 30%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  margin-right: 30%;
+}
+.article-list li {
+  margin-top: 40px;
+  background-color: #1e1e1e; /* Dark background for list items */
+  margin: 10px 0; /* Spacing between items */
+  padding: 10px; /* Padding inside each item */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  margin-left: 30%;
+  margin-right: 30%;
+}

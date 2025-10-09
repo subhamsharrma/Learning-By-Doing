@@ -1,10 +1,14 @@
+
+
+<link rel="stylesheet" href="/css/style.css">
 <h1>Personal Blog</h1>
 
-<ul>
+<ul class="article-list">
   <% articles.forEach(a => { %>
     <li>
       <a href="/article/<%= a.id %>"><%= a.title %></a> 
-      - <small><%= a.date %></small>
+
+     - <bold><%= a.date %></bold>
     </li>
   <% }) %>
 </ul>
