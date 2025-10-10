@@ -106,6 +106,13 @@ const articles = [
       "Performance in Node.js often comes down to smart resource management. Since Node runs on a single thread, you must use asynchronous operations wisely to avoid blocking the event loop. Techniques like caching responses, compressing assets, and using clustering for multi-core CPUs drastically improve speed. Database optimization and minimizing middleware overhead also make a big difference. Profiling tools like `clinic.js` or Chrome DevTools can reveal bottlenecks. True performance optimization isn’t about premature tweaks—it’s about measuring, identifying slow points, and improving them systematically for real scalability.",
     date: "2025-10-07",
   },
+  {
+    id: 11,
+    title: "The Importance of Code Reviews",
+    content:
+      "Code reviews are more than just a quality check—they’re a learning opportunity. When peers review your code, they provide fresh perspectives that can catch bugs, improve readability, and enforce best practices. Reviewing others’ code sharpens your own skills, exposing you to different styles and solutions. A good review focuses on constructive feedback, balancing praise with suggestions for improvement. It fosters collaboration and shared ownership of the codebase. In the long run, regular code reviews lead to higher quality software and a stronger, more cohesive development team.",
+    date: "2025-10-07",
+  }
 ];
 
 app.get("/home", (req, res) => {
@@ -121,22 +128,21 @@ app.get("/article/admin", (req, res) => {
   res.render("admin");
 });
 
+// app.get("/admin/edit/:id", (req, res) => {
+  //   const article = articles.find((a) => a.id == req.params.id);
+  //   if (!article) return res.status(404).send("Article not found");
+  //   res.render("edit", { article });
+  // });
+  
 app.get("/article/admin", (req, res) => {
   res.render("admin", { articles });
 });
+
 app.get("/admin/edit/:id", (req, res) => {
   const article = articles.find((a) => a.id == req.params.id);
   if (!article) return res.status(404).send("Article not found");
   res.render("edit", { article });
 });
-
-// app.get("/admin/edit/:id", (req, res) => {
-//   const article = articles.find((a) => a.id == req.params.id);
-//   if (!article) return res.status(404).send("Article not found");
-//   res.render("edit", { article });
-// });
-
-
 
 
 // Start server
