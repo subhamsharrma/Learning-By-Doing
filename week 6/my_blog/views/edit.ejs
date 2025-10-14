@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit - <%= article.title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Edit Article</h1>
+  <form action="/admin/edit/<%= article.id %>" method="POST">
+    <label>Title:</label><br>
+    <input type="text" name="title" value="<%= article.title %>" required /><br><br>
+
+    <label>Content:</label><br>
+    <textarea name="content" rows="10" cols="50" required><%= article.content %></textarea><br><br>
+
+    <button type="submit">Save</button>
+  </form>
+  <br>
+  <a href="/article/admin">Back to Admin Panel</a>
+</body>
+</html>
