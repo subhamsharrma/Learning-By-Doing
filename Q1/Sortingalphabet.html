@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Articles List</title>
+  </head>
+
+  <body>
+
+    <ul id="band"></ul>
+
+    <script>
+      const articles = [
+
+        "The Plot in You",
+         "The Devil Wears Prada",
+          "Pierce the Veil",
+           "Norma Jean",
+           "The Bled",
+           "Say Anything",
+           "The Midway State",
+           "Counterparts",
+           "Oh, Sleeper",
+            "Anywhere But Here",
+            "An Old Dog"
+        ];
+
+      function stripPrefix(title) {
+        return title.replace(/^(a |an |the )/i, "").trim();
+      }
+
+
+      const sorted = articles.sort((a, b) => {
+        let nameA = stripPrefix(a).toLowerCase();
+        let nameB = stripPrefix(b).toLowerCase();
+        return nameA.localeCompare(nameB);
+      });
+
+
+      const ul = document.getElementById("band");
+      sorted.forEach(article => {
+        let li = document.createElement("li");
+        li.textContent = article;  // display original
+        ul.appendChild(li);
+      });
+
+
+
+    </script>
+  </body>
+</html>
